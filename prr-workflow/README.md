@@ -1,7 +1,7 @@
 # Temporal PRR Workflow
 
-This is an advanced sample that requires knowledge of SDK internals. There's a lot going on "behind the scenes" in [`subscriptions.ts`](./src/workflows/subscriptions.ts).
-It is far simpler to manually publish updates from Workflow code but we put the sample here to show off some of the advanced capabilities provided by the runtime.
+Temporal flow will go through PRR email 1/2 and no response task creation and then stop. Flow can be restarted/resumed by an external signal from another service or user.
+If we get an abort status the Workflow completes and exits.
 
 ### Running this sample
 
