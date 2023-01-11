@@ -9,4 +9,5 @@ It is far simpler to manually publish updates from Workflow code but we put the 
 1. `npm install` to install dependencies.
 1. `npm run worker` to start the Worker.
 1. `npm run client.watch` to start the Client in another shell. Comment/Uncomment section of `clientSignal.ts` to simulate changes of status while the PRR workflow is executing
+1. Go to http://localhost:8080/namespaces/default/workflows/prrWorkflowAgency123 to see details about the workflow once it begins to execute
 
