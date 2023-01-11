@@ -9,6 +9,10 @@ export async function sendFirstEmail({
 }: PRRParams): Promise<Record<string, any>> {
   const cancelSignal = Context.current().cancellationSignal
 
+  if(Context.current().info.attempt === 1) {
+    throw new Error('I always fail the first time I try to go')
+  }
+
   // do some async/external work (hit db/external API) that could fail and needs to retry
   const agency = await db.getAgency(agencyId)
   // send heartbeat so that we can detect the workflow being canceled

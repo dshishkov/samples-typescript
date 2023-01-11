@@ -126,5 +126,5 @@ export async function PRRWokrflow({
     }
   }
 
-  console.log('PRR Workflow Completed')
+  console.log('PRR Workflow Exited')
 }
